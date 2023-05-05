@@ -7,7 +7,7 @@ app.use(cors());
 const port = process.env.PORT || 3005;
 const apidata = require('./data/match.js');
 
-app.get('/', (req, res) => {
+app.get('/match', (req, res) => {
     res.send(apidata);
 });
 
